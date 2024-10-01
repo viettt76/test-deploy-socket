@@ -1,0 +1,10 @@
+@import '~/styles/variables';
+
+.friends-wrapper {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 0.8rem;
+    background-color: $background-color-medium-gray;
+    padding: 2rem 4rem;
+}

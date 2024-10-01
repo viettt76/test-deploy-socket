@@ -1,0 +1,37 @@
+@import '~/styles/variables';
+
+.sidebar-wrapper {
+    width: 36rem;
+    height: calc(100vh - 5.6rem);
+    position: sticky;
+    top: 5.6rem;
+    box-shadow: 0.1rem 0 0.3rem $box-shadow;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem 1.2rem;
+
+    .sidebar-title {
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1.2rem;
+    }
+
+    .sidebar-item {
+        font-size: 1.7rem;
+        color: $text;
+        font-weight: 600;
+        padding: 0.8rem 1.2rem;
+        border-radius: 0.8rem;
+
+        &:hover {
+            background-color: $background-color-medium-gray;
+        }
+
+        &.active {
+            background-color: $background-color-gray;
+        }
+    }
+}
