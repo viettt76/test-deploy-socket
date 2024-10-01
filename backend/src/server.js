@@ -24,7 +24,7 @@ AppDataSource.initialize()
       cors({
         credentials: true,
         // origin: 'https://viettt76.github.io',
-        origin: 'http://localhost:3000',
+        origin: 'https://test-deploy-socket.onrender.com',
       })
     );
     app.use(cookieParser());
@@ -32,7 +32,7 @@ AppDataSource.initialize()
     const server = http.createServer(app);
     const io = socketIo(server, {
       cors: {
-        origin: 'http://localhost:3000',
+        origin: 'https://test-deploy-socket.onrender.com',
         // origin: 'https://viettt76.github.io',
         methods: ['GET', 'POST'],
         credentials: true,
