@@ -10,6 +10,9 @@ const __dirname = path.dirname(__filename);
 // https://vitejs.dev/config/
 export default defineConfig({
     // base: '/heyoy-social-network-frontend/',
+    build: {
+        sourcemap: true,
+    },
     plugins: [
         {
             name: 'treat-js-files-as-jsx',
