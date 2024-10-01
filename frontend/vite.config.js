@@ -12,6 +12,14 @@ export default defineConfig({
     // base: '/heyoy-social-network-frontend/',
     build: {
         sourcemap: true,
+        rollupOptions: {
+            onLog(level, log, handler) {
+                if (log.cause && log.cause.message === `Can't resolve original location of error.`) {
+                    return;
+                }
+                handler(level, log);
+            },
+        },
     },
     plugins: [
         {
@@ -41,5 +49,6 @@ export default defineConfig({
     },
     server: {
         port: 3000,
+        sourcemap: true,
     },
 });

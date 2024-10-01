@@ -5,7 +5,7 @@ import { io } from 'socket.io-client';
 //     // transports: ['websocket', 'polling'],
 // });
 
-const socket = io('http://localhost:8080', {
+const socket = io('https://test-deploy-socket.onrender.com', {
     withCredentials: true,
 });
 
